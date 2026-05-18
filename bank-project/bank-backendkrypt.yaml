@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-backendkrypt
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: bank-backendkrypt
+
+  template:
+    metadata:
+      labels:
+        app: bank-backendkrypt
+
+    spec:
+      containers:
+      - name: bank-backendkrypt
+        image: 915742579450.dkr.ecr.eu-north-1.amazonaws.com/bank-backendkrypt:latest
+
+        ports:
+        - containerPort: 8080
