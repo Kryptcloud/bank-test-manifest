@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: bank-backendkrypt
-        image: 915742579450.dkr.ecr.eu-north-1.amazonaws.com/bank-backendkrypt:13
+        image: 915742579450.dkr.ecr.eu-north-1.amazonaws.com/bank-backendkrypt:18
 
         ports:
         - containerPort: 8080
